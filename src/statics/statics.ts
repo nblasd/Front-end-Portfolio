@@ -65,12 +65,13 @@ export const cardsInfo = [
     link: "https://photography-web-vercel.vercel.app/",
   },
   {
-    projectName: "third",
-    description: "",
-    src: "/test.jpg",
-    alt: "test",
+    projectName: "Hello-World",
+    description:
+      "Hello-world is a simple web application.Next.js and Tailwind were used.I made it to practice my animation with framer-motion.",
+    src: "/Hello.png",
+    alt: "hello-world",
     width: 400,
     height: 400,
-    link: "",
+    link: "https://custom-cursor-alpha.vercel.app/",
   },
 ];
