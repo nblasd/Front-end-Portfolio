@@ -74,4 +74,14 @@ export const cardsInfo = [
     height: 400,
     link: "https://custom-cursor-alpha.vercel.app/",
   },
+    {
+    projectName: "Todo-App",
+    description:
+      "Todo-app, I made it using Next.js and Redux-toolkit.Where you can add and remove your tasks.But i haven't connected database.So your data wil be remove after every reload ",
+    src: "/Todo-app.png",
+    alt: "todo-app",
+    width: 400,
+    height: 400,
+    link: "https://todo-app-wine-nine.vercel.app/",
+  },
 ];
