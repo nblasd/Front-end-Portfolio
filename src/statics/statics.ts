@@ -92,6 +92,16 @@ export const cardsInfo = [
     alt: "analyzer-app",
     width: 400,
     height: 400,
-    link: "https://todo-app-wine-nine.vercel.app/",
+    link: "https://analyzer-3.netlify.app/",
+  },
+        {
+    projectName: "Calculator-app",
+    description:
+      "Calculator-App, I made it using Next.js.where you can calculate things.But it isn't responsive for all devices.",
+    src: "/calculator.png",
+    alt: "calculator-app",
+    width: 400,
+    height: 400,
+    link: "https://calculator-129.netlify.app/",
   },
 ];
