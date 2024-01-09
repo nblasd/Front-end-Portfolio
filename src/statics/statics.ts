@@ -84,4 +84,14 @@ export const cardsInfo = [
     height: 400,
     link: "https://todo-app-wine-nine.vercel.app/",
   },
+      {
+    projectName: "Analyzer-App",
+    description:
+      "Analyzer-App, I made it using Next.js and React-chart.Where you can analyze your status.But it is only front-end so there isn't any backend funtionality in it. ",
+    src: "/Analyzer.png",
+    alt: "analyzer-app",
+    width: 400,
+    height: 400,
+    link: "https://todo-app-wine-nine.vercel.app/",
+  },
 ];
