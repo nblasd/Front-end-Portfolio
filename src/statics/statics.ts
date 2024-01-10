@@ -94,7 +94,7 @@ export const cardsInfo = [
     height: 400,
     link: "https://analyzer-3.netlify.app/",
   },
-        {
+  {
     projectName: "Calculator-app",
     description:
       "Calculator-App, I made it using Next.js.where you can calculate things.But it isn't responsive for all devices.",
@@ -103,5 +103,15 @@ export const cardsInfo = [
     width: 400,
     height: 400,
     link: "https://calculator-129.netlify.app/",
+  },
+   {
+    projectName: "Text-Corr-app",
+    description:
+      "Text-corr-App, which I created with the React.js Framework, allows you to arrange your text.For styling, I used bootstrap css.",
+    src: "/text-corr.png",
+    alt: "text-corr-app",
+    width: 400,
+    height: 400,
+    link: "https://text-corr.netlify.app/",
   },
 ];
