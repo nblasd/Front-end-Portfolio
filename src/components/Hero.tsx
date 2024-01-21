@@ -2,7 +2,10 @@ import Hello from "./Hello";
 import Text from "./Text";
 export default function Hero() {
   return (
-    <main className="min-h-screen w-screen flex items-center justify-center">
+    <main
+      id="hero"
+      className="min-h-screen w-screen flex items-center justify-center"
+    >
       <div className="w-[80%] gap-10 flex flex-col items-center justify-center">
         <div className="mt-40 ">
           <Hello />

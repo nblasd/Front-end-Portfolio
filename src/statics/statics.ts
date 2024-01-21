@@ -1,7 +1,7 @@
 export const links = [
   {
     name: "About me",
-    href: "/",
+    href: "/#hero",
   },
   {
     name: "Projects",
@@ -74,7 +74,7 @@ export const cardsInfo = [
     height: 400,
     link: "https://custom-cursor-alpha.vercel.app/",
   },
-    {
+  {
     projectName: "Todo-App",
     description:
       "Todo-app, I made it using Next.js and Redux-toolkit.Where you can add and remove your tasks.But i haven't connected database.So your data wil be remove after every reload ",
@@ -84,7 +84,7 @@ export const cardsInfo = [
     height: 400,
     link: "https://todo-app-wine-nine.vercel.app/",
   },
-      {
+  {
     projectName: "Analyzer-App",
     description:
       "Analyzer-App, I made it using Next.js and React-chart.Where you can analyze your status.But it is only front-end so there isn't any backend funtionality in it. ",
@@ -104,7 +104,7 @@ export const cardsInfo = [
     height: 400,
     link: "https://calculator-129.netlify.app/",
   },
-   {
+  {
     projectName: "Text-Corr-app",
     description:
       "Text-corr-App, which I created with the React.js Framework, allows you to arrange your text.For styling, I used bootstrap css.",

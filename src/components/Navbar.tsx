@@ -56,27 +56,32 @@ export default function Navbar() {
     exit: { x: "-100vw", transition: { duration: 1 } },
   };
   const navOpen = (e: React.MouseEvent) => {
-    e.preventDefault();
+    // e.preventDefault();
     setIsOpen(!isOpen);
   };
+
   return (
     <main>
       <nav
-        className={`fixed z-10 w-screen h-24 flex items-center justify-center  ${
+        className={`fixed z-10 w-full h-24 flex items-center justify-center  ${
           scrolled
             ? "bg-[#14213d] duration-700 ease-out"
             : "bg-transparent duration-700 ease-out"
         }`}
       >
         <div className="w-[80%] flex items-center justify-between">
-          <div>
-            <Image
-              src={"/logo.png"}
-              alt={"logo"}
-              width={80}
-              height={80}
-            ></Image>
-          </div>
+          <Link href={"/#hero"}>
+            {" "}
+            <div>
+              <Image
+                src={"/logo.png"}
+                alt={"logo"}
+                width={80}
+                height={80}
+              ></Image>
+            </div>
+          </Link>
+
           <div className="hidden md:flex gap-16 text-xl">
             {links.map((items, index) => (
               <Link key={index} href={items.href} className="link">
@@ -94,7 +99,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute z-10 top-0 left-0 h-screen overflow-hidden w-[70%] bg-[#232D3F] flex flex-col items-center justify-center md:hidden gap-28"
+            className="fixed z-10 top-0 left-0 min-h-full overflow-hidden w-[70%] bg-[#232D3F] flex flex-col items-center justify-center md:hidden gap-28"
             variants={mobileMenuVariants}
             initial="initial"
             animate="animate"
@@ -122,7 +127,12 @@ export default function Navbar() {
               className="flex flex-col gap-5 mb-28"
             >
               {links.map((items, index) => (
-                <Link key={index} href={items.href} className="link">
+                <Link
+                  key={index}
+                  href={items.href}
+                  className="link"
+                  onClick={navOpen}
+                >
                   {items.name}
                 </Link>
               ))}
