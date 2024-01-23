@@ -6,10 +6,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Hamburger from "./Hamburger";
 import { links } from "@/statics/statics";
+import { useStore } from "@/store/store";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const toggler = useStore((state) => state.setIsClicked);
 
   useEffect(() => {
     window.onscroll = () => {
@@ -58,6 +61,11 @@ export default function Navbar() {
   const navOpen = (e: React.MouseEvent) => {
     // e.preventDefault();
     setIsOpen(!isOpen);
+  };
+
+  const mobileNav = () => {
+    setIsOpen(!isOpen);
+    toggler();
   };
 
   return (
@@ -111,12 +119,15 @@ export default function Navbar() {
               animate="animate"
               exit="exit"
             >
-              <Image
-                src={"/logo.png"}
-                alt={"logo"}
-                width={80}
-                height={80}
-              ></Image>
+              <Link onClick={mobileNav} href={"/#hero"}>
+                {" "}
+                <Image
+                  src={"/logo.png"}
+                  alt={"logo"}
+                  width={80}
+                  height={80}
+                ></Image>
+              </Link>
             </motion.div>
 
             <motion.div
@@ -131,7 +142,7 @@ export default function Navbar() {
                   key={index}
                   href={items.href}
                   className="link"
-                  onClick={navOpen}
+                  onClick={mobileNav}
                 >
                   {items.name}
                 </Link>

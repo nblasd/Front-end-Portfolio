@@ -1,12 +1,14 @@
 import React from "react";
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useStore } from "@/store/store";
 export default function Hamburger() {
-  const [click, setClick] = useState(true);
+  const click = useStore((state) => state.isClicked);
+
+  const toggler = useStore((state) => state.setIsClicked);
   const clickToggle = () => {
-    setClick(!click);
-    // console.log(click);
+    toggler();
   };
+
   return (
     <main
       onClick={clickToggle}
