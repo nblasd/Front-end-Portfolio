@@ -114,4 +114,14 @@ export const cardsInfo = [
     height: 400,
     link: "https://text-corr.netlify.app/",
   },
+    {
+    projectName: "News-app",
+    description:
+      "News-App, which I created with the Next.js Framework, allows you to see the latest news.But unfortunately i haven't deploy it because i don't have Api key for production.But you can clone it and use it using your free api key on local host",
+    src: "/news-app.png",
+    alt: "news-app",
+    width: 400,
+    height: 400,
+    link: "https://github.com/nblasd/news-app",
+  },
 ];
