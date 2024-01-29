@@ -64,6 +64,16 @@ export const cardsInfo = [
     height: 400,
     link: "https://photography-web-vercel.vercel.app/",
   },
+    {
+    projectName: "InspireME-Daily",
+    description:
+      "InspireMe-Daily: You can inspire yourself by reading daily quotes.I have use Next.js 14 with serverside action and shadcn and tailwind in this project",
+    src: "/InspireMe-daily.png",
+    alt: "inspire me",
+    width: 400,
+    height: 400,
+    link: "https://inspire-me-daily.vercel.app/",
+  },
   {
     projectName: "Hello-World",
     description:
